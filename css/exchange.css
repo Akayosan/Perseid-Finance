@@ -1,0 +1,294 @@
+.exch {
+    min-width: 488px;
+    width: 488px;
+    height: 651px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 24px 48px 0px rgba(16, 24, 40, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exch__timer {
+    margin-top: 45px;
+    width: 382px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.exch__time-cont {
+    display: flex;
+    flex-direction: row;
+    width: 92%;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.exch__time-to {
+    color: var(--BLUE, #3F8DE5);
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 70%;
+    letter-spacing: 6px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+.exch__time {
+    margin: 0;
+    color: #2C3642;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 153%;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.exch__values {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    gap: 10px;
+    margin-top: 33px;
+    align-items: center;
+}
+
+.exch__value {
+    color: #3F8DE5;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 175%;
+    text-transform: uppercase;
+    margin: 17px 0 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.exch__value::before {
+    content: '';
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0.13;
+}
+
+.exch__value::after {
+    content: '';
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0.13;
+}
+
+.exch__value-name {
+    color: #2C3642;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 133%;
+    text-transform: uppercase;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    text-align: center;
+}
+
+.exch__payments {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 22px;
+}
+
+.exch__payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #C2C2C2;
+    background: #FCFCFC;
+    width: 107px;
+    height: 50px;
+    padding: 0;
+    gap: 5px;
+    color: #4B4A47;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.exch__payment_active {
+    border: 1px solid #4B4A47;
+}
+
+.exch__labels {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 20px;
+}
+
+.exch__label {
+    position: relative;
+    border: 1px solid #00113326;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.exch__label-text {
+    margin: 0;
+    color: #545E65;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.exch__input-cont {
+    width: 320px;
+    padding: 10px 0 10px 16px;
+}
+
+.exch__input {
+    border: 0;
+    background: #FFF;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0;
+    margin-top: 3.5px;
+}
+
+.exch__input:focus {
+    outline: none;
+    border: 0;
+}
+
+.exch__img {
+    height: 28px;
+    width: 32px;
+    object-fit: contain;
+    padding: 22px 42px;
+    border-left: 1px solid #00113326;
+}
+
+.exch__btns {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+.exch__btn-connect {
+    border-radius: 5px;
+    background-color: #3F8DE5;
+    width: 216px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0;
+}
+
+.exch__btn-buy {
+    border-radius: 5px;
+    border: 1px solid #2C3642;
+    width: 216px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+}
+
+.exch__logo {
+    margin: 0 0 13px;
+    height: 19px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+    .exch {
+        min-width: 350px;
+        width: 350px;
+        height: 615px;
+    }
+
+    .exch__timer {
+        margin-top: 25px;
+        width: 310px;
+    }
+
+    .exch__time-to {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+
+    .exch__time-cont {
+        width: 280px;
+    }
+
+    .exch__value-name {
+        font-size: 14px;
+    }
+
+    .exch__value {
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .exch__payment {
+        width: 80px;
+        font-size: 16px;
+    }
+
+    .exch__payment-img {
+        display: none;
+    }
+
+    .exch__label-text {
+        text-align: left;
+    }
+
+    .exch__input-cont {
+        width: 175px;
+    }
+
+    .exch__btn-connect {
+        width: 160px;
+    }
+
+    .exch__btn-buy {
+        width: 160px;
+    }
+}

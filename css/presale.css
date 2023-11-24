@@ -1,0 +1,75 @@
+.presale {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.presale__container {
+    width: 1090px;
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.presale__header {
+    font-family: 'SatoshiBlack', sans-serif;
+    color: #2C3642;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 125%;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+
+.presale__about {
+    color: #5A5A5A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 187.5%;
+    margin: 0;
+}
+
+.presale__img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../images/presale.svg');
+    width: 866px;
+    height: 490px;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.presale__container_black .presale__header {
+    color: #fff;
+}
+
+.presale__container_black .presale__about {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.presale__container_black .presale__img {
+    background-image: url('../images/presale_black.svg');
+}
+
+@media screen and (max-width: 1023px) {
+    .presale__img {
+        width: 700px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .presale__img {
+        width: 320px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .presale__header {
+        font-size: 32px;
+    }
+}
